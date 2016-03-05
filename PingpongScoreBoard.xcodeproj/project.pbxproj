@@ -1,0 +1,626 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2AECE8D36570F8F8FFC01036 /* Pods_PingpongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */; };
+		91C148E21C8A3AC1006745B5 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */; };
+		91C148E41C8A3C93006745B5 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E31C8A3C93006745B5 /* Firebase.framework */; };
+		91C148E61C8A3CFA006745B5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E51C8A3CFA006745B5 /* libicucore.tbd */; };
+		91C148E81C8A3D08006745B5 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E71C8A3D08006745B5 /* libc++.tbd */; };
+		91C148EA1C8A3D11006745B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E91C8A3D11006745B5 /* CFNetwork.framework */; };
+		91C148EC1C8A3D18006745B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148EB1C8A3D18006745B5 /* Security.framework */; };
+		91C148EE1C8A3D24006745B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148ED1C8A3D24006745B5 /* SystemConfiguration.framework */; };
+		91C148F01C8A3ED9006745B5 /* PingpongAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */; };
+		91C148F21C8A48AC006745B5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148F11C8A48AC006745B5 /* User.swift */; };
+		91ECC6051C8A3072009761C2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6041C8A3072009761C2 /* AppDelegate.swift */; };
+		91ECC6071C8A3072009761C2 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6061C8A3072009761C2 /* FirstViewController.swift */; };
+		91ECC6091C8A3072009761C2 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6081C8A3072009761C2 /* SecondViewController.swift */; };
+		91ECC60C1C8A3072009761C2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60A1C8A3072009761C2 /* Main.storyboard */; };
+		91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60D1C8A3072009761C2 /* Assets.xcassets */; };
+		91ECC6191C8A3072009761C2 /* PingpongScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6181C8A3072009761C2 /* PingpongScoreBoardTests.swift */; };
+		91ECC6241C8A3072009761C2 /* PingpongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		91ECC6151C8A3072009761C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91ECC5F91C8A3072009761C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91ECC6001C8A3072009761C2;
+			remoteInfo = PingpongScoreBoard;
+		};
+		91ECC6201C8A3072009761C2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 91ECC5F91C8A3072009761C2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 91ECC6001C8A3072009761C2;
+			remoteInfo = PingpongScoreBoard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
+		91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
+		91C148E31C8A3C93006745B5 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
+		91C148E51C8A3CFA006745B5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		91C148E71C8A3D08006745B5 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		91C148E91C8A3D11006745B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		91C148EB1C8A3D18006745B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		91C148ED1C8A3D24006745B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PingpongAPI.swift; sourceTree = "<group>"; };
+		91C148F11C8A48AC006745B5 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		91ECC6011C8A3072009761C2 /* PingpongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingpongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91ECC6041C8A3072009761C2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91ECC6061C8A3072009761C2 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		91ECC6081C8A3072009761C2 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		91ECC60B1C8A3072009761C2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91ECC60D1C8A3072009761C2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91ECC60F1C8A3072009761C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91ECC6141C8A3072009761C2 /* PingpongScoreBoardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingpongScoreBoardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91ECC6181C8A3072009761C2 /* PingpongScoreBoardTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingpongScoreBoardTests.swift; sourceTree = "<group>"; };
+		91ECC61A1C8A3072009761C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingpongScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingpongScoreBoardUITests.swift; sourceTree = "<group>"; };
+		91ECC6251C8A3072009761C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91ECC5FE1C8A3072009761C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91C148EE1C8A3D24006745B5 /* SystemConfiguration.framework in Frameworks */,
+				91C148EC1C8A3D18006745B5 /* Security.framework in Frameworks */,
+				91C148EA1C8A3D11006745B5 /* CFNetwork.framework in Frameworks */,
+				91C148E81C8A3D08006745B5 /* libc++.tbd in Frameworks */,
+				91C148E61C8A3CFA006745B5 /* libicucore.tbd in Frameworks */,
+				2AECE8D36570F8F8FFC01036 /* Pods_PingpongScoreBoard.framework in Frameworks */,
+				91C148E41C8A3C93006745B5 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC6111C8A3072009761C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC61C1C8A3072009761C2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D50B1CB1F858B7F3A7A3417 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				91C148ED1C8A3D24006745B5 /* SystemConfiguration.framework */,
+				91C148EB1C8A3D18006745B5 /* Security.framework */,
+				91C148E91C8A3D11006745B5 /* CFNetwork.framework */,
+				91C148E71C8A3D08006745B5 /* libc++.tbd */,
+				91C148E51C8A3CFA006745B5 /* libicucore.tbd */,
+				91C148E31C8A3C93006745B5 /* Firebase.framework */,
+				DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61064F9B33B5868DDF82080A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */,
+				4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		91ECC5F81C8A3072009761C2 = {
+			isa = PBXGroup;
+			children = (
+				91ECC6031C8A3072009761C2 /* PingpongScoreBoard */,
+				91ECC6171C8A3072009761C2 /* PingpongScoreBoardTests */,
+				91ECC6221C8A3072009761C2 /* PingpongScoreBoardUITests */,
+				91ECC6021C8A3072009761C2 /* Products */,
+				61064F9B33B5868DDF82080A /* Pods */,
+				0D50B1CB1F858B7F3A7A3417 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		91ECC6021C8A3072009761C2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91ECC6011C8A3072009761C2 /* PingpongScoreBoard.app */,
+				91ECC6141C8A3072009761C2 /* PingpongScoreBoardTests.xctest */,
+				91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91ECC6031C8A3072009761C2 /* PingpongScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				91ECC6041C8A3072009761C2 /* AppDelegate.swift */,
+				91ECC6061C8A3072009761C2 /* FirstViewController.swift */,
+				91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */,
+				91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */,
+				91C148F11C8A48AC006745B5 /* User.swift */,
+				91ECC6081C8A3072009761C2 /* SecondViewController.swift */,
+				91ECC60A1C8A3072009761C2 /* Main.storyboard */,
+				91ECC60D1C8A3072009761C2 /* Assets.xcassets */,
+				91ECC60F1C8A3072009761C2 /* Info.plist */,
+			);
+			path = PingpongScoreBoard;
+			sourceTree = "<group>";
+		};
+		91ECC6171C8A3072009761C2 /* PingpongScoreBoardTests */ = {
+			isa = PBXGroup;
+			children = (
+				91ECC6181C8A3072009761C2 /* PingpongScoreBoardTests.swift */,
+				91ECC61A1C8A3072009761C2 /* Info.plist */,
+			);
+			path = PingpongScoreBoardTests;
+			sourceTree = "<group>";
+		};
+		91ECC6221C8A3072009761C2 /* PingpongScoreBoardUITests */ = {
+			isa = PBXGroup;
+			children = (
+				91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */,
+				91ECC6251C8A3072009761C2 /* Info.plist */,
+			);
+			path = PingpongScoreBoardUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91ECC6001C8A3072009761C2 /* PingpongScoreBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ECC6281C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoard" */;
+			buildPhases = (
+				731C97893C94DE0D2BC839F7 /* Check Pods Manifest.lock */,
+				91ECC5FD1C8A3072009761C2 /* Sources */,
+				91ECC5FE1C8A3072009761C2 /* Frameworks */,
+				91ECC5FF1C8A3072009761C2 /* Resources */,
+				D45EFA8353B25D6D050A98DB /* Embed Pods Frameworks */,
+				9AF8C52C4B730C443EA0F491 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PingpongScoreBoard;
+			productName = PingpongScoreBoard;
+			productReference = 91ECC6011C8A3072009761C2 /* PingpongScoreBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		91ECC6131C8A3072009761C2 /* PingpongScoreBoardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ECC62B1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardTests" */;
+			buildPhases = (
+				91ECC6101C8A3072009761C2 /* Sources */,
+				91ECC6111C8A3072009761C2 /* Frameworks */,
+				91ECC6121C8A3072009761C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91ECC6161C8A3072009761C2 /* PBXTargetDependency */,
+			);
+			name = PingpongScoreBoardTests;
+			productName = PingpongScoreBoardTests;
+			productReference = 91ECC6141C8A3072009761C2 /* PingpongScoreBoardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		91ECC61E1C8A3072009761C2 /* PingpongScoreBoardUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91ECC62E1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardUITests" */;
+			buildPhases = (
+				91ECC61B1C8A3072009761C2 /* Sources */,
+				91ECC61C1C8A3072009761C2 /* Frameworks */,
+				91ECC61D1C8A3072009761C2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				91ECC6211C8A3072009761C2 /* PBXTargetDependency */,
+			);
+			name = PingpongScoreBoardUITests;
+			productName = PingpongScoreBoardUITests;
+			productReference = 91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91ECC5F91C8A3072009761C2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Weave;
+				TargetAttributes = {
+					91ECC6001C8A3072009761C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = GTN6L5ER8Y;
+					};
+					91ECC6131C8A3072009761C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 91ECC6001C8A3072009761C2;
+					};
+					91ECC61E1C8A3072009761C2 = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 91ECC6001C8A3072009761C2;
+					};
+				};
+			};
+			buildConfigurationList = 91ECC5FC1C8A3072009761C2 /* Build configuration list for PBXProject "PingpongScoreBoard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91ECC5F81C8A3072009761C2;
+			productRefGroup = 91ECC6021C8A3072009761C2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91ECC6001C8A3072009761C2 /* PingpongScoreBoard */,
+				91ECC6131C8A3072009761C2 /* PingpongScoreBoardTests */,
+				91ECC61E1C8A3072009761C2 /* PingpongScoreBoardUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91ECC5FF1C8A3072009761C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */,
+				91ECC60C1C8A3072009761C2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC6121C8A3072009761C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC61D1C8A3072009761C2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		731C97893C94DE0D2BC839F7 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF8C52C4B730C443EA0F491 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D45EFA8353B25D6D050A98DB /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91ECC5FD1C8A3072009761C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91ECC6091C8A3072009761C2 /* SecondViewController.swift in Sources */,
+				91C148F01C8A3ED9006745B5 /* PingpongAPI.swift in Sources */,
+				91C148F21C8A48AC006745B5 /* User.swift in Sources */,
+				91ECC6051C8A3072009761C2 /* AppDelegate.swift in Sources */,
+				91C148E21C8A3AC1006745B5 /* PlayerTableViewController.swift in Sources */,
+				91ECC6071C8A3072009761C2 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC6101C8A3072009761C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91ECC6191C8A3072009761C2 /* PingpongScoreBoardTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		91ECC61B1C8A3072009761C2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91ECC6241C8A3072009761C2 /* PingpongScoreBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		91ECC6161C8A3072009761C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91ECC6001C8A3072009761C2 /* PingpongScoreBoard */;
+			targetProxy = 91ECC6151C8A3072009761C2 /* PBXContainerItemProxy */;
+		};
+		91ECC6211C8A3072009761C2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 91ECC6001C8A3072009761C2 /* PingpongScoreBoard */;
+			targetProxy = 91ECC6201C8A3072009761C2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		91ECC60A1C8A3072009761C2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91ECC60B1C8A3072009761C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91ECC6261C8A3072009761C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+			};
+			name = Debug;
+		};
+		91ECC6271C8A3072009761C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 9.1;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91ECC6291C8A3072009761C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PingpongScoreBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		91ECC62A1C8A3072009761C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PingpongScoreBoard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		91ECC62C1C8A3072009761C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PingpongScoreBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingpongScoreBoard.app/PingpongScoreBoard";
+			};
+			name = Debug;
+		};
+		91ECC62D1C8A3072009761C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = PingpongScoreBoardTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoardTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PingpongScoreBoard.app/PingpongScoreBoard";
+			};
+			name = Release;
+		};
+		91ECC62F1C8A3072009761C2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PingpongScoreBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PingpongScoreBoard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		91ECC6301C8A3072009761C2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = PingpongScoreBoardUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.getweave.PingpongScoreBoardUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = PingpongScoreBoard;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91ECC5FC1C8A3072009761C2 /* Build configuration list for PBXProject "PingpongScoreBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ECC6261C8A3072009761C2 /* Debug */,
+				91ECC6271C8A3072009761C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ECC6281C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ECC6291C8A3072009761C2 /* Debug */,
+				91ECC62A1C8A3072009761C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ECC62B1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ECC62C1C8A3072009761C2 /* Debug */,
+				91ECC62D1C8A3072009761C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91ECC62E1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91ECC62F1C8A3072009761C2 /* Debug */,
+				91ECC6301C8A3072009761C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91ECC5F91C8A3072009761C2 /* Project object */;
+}
