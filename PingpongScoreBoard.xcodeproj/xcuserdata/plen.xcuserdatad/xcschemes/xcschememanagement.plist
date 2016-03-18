@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>PhonePingpongScoreBoard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>PingPongScorePhone.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PingpongScoreBoard.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>91ECC6001C8A3072009761C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91ECC6131C8A3072009761C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>91ECC61E1C8A3072009761C2</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8BA6A751C9CB34F003C84F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8BA6A881C9CB34F003C84F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8BA6A931C9CB34F003C84F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F8BA6ABC1C9CBC0F003C84F1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

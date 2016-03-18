@@ -24,6 +24,22 @@
 		91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60D1C8A3072009761C2 /* Assets.xcassets */; };
 		91ECC6191C8A3072009761C2 /* PingpongScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6181C8A3072009761C2 /* PingpongScoreBoardTests.swift */; };
 		91ECC6241C8A3072009761C2 /* PingpongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */; };
+		F8BA6AC51C9CBC0F003C84F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BA6AC31C9CBC0F003C84F1 /* Main.storyboard */; };
+		F8BA6AD21C9CBC68003C84F1 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E31C8A3C93006745B5 /* Firebase.framework */; };
+		F8BA6AD31C9CBC68003C84F1 /* Firebase.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E31C8A3C93006745B5 /* Firebase.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		F8BA6AD61C9CBC70003C84F1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA6AD51C9CBC70003C84F1 /* Security.framework */; };
+		F8BA6AD81C9CBC8A003C84F1 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA6AD71C9CBC8A003C84F1 /* SystemConfiguration.framework */; };
+		F8BA6ADA1C9CBCAC003C84F1 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA6AD91C9CBCAC003C84F1 /* libicucore.tbd */; };
+		F8BA6ADC1C9CBCBB003C84F1 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA6ADB1C9CBCBB003C84F1 /* libc++.tbd */; };
+		F8BA6ADE1C9CBCC4003C84F1 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F8BA6ADD1C9CBCC4003C84F1 /* CFNetwork.framework */; };
+		F8BA6ADF1C9CBCCD003C84F1 /* PingpongAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */; };
+		F8BA6AE01C9CBCD1003C84F1 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */; };
+		F8BA6AE11C9CBCE6003C84F1 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148F11C8A48AC006745B5 /* User.swift */; };
+		F8BA6AE21C9CBCE9003C84F1 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6081C8A3072009761C2 /* SecondViewController.swift */; };
+		F8BA6AE31C9CBCEF003C84F1 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6061C8A3072009761C2 /* FirstViewController.swift */; };
+		F8BA6AE41C9CBCF3003C84F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6041C8A3072009761C2 /* AppDelegate.swift */; };
+		F8BA6AE51C9CBD21003C84F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60D1C8A3072009761C2 /* Assets.xcassets */; };
+		F8BA6AE61C9CBE7B003C84F1 /* Pods_PingpongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +58,20 @@
 			remoteInfo = PingpongScoreBoard;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F8BA6AD41C9CBC68003C84F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F8BA6AD31C9CBC68003C84F1 /* Firebase.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,6 +99,14 @@
 		91ECC6251C8A3072009761C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
 		DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BA6ABD1C9CBC0F003C84F1 /* PhonePingpongScoreBoard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhonePingpongScoreBoard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F8BA6AC41C9CBC0F003C84F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F8BA6ACB1C9CBC0F003C84F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F8BA6AD51C9CBC70003C84F1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/Security.framework; sourceTree = DEVELOPER_DIR; };
+		F8BA6AD71C9CBC8A003C84F1 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		F8BA6AD91C9CBCAC003C84F1 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib/libicucore.tbd; sourceTree = DEVELOPER_DIR; };
+		F8BA6ADB1C9CBCBB003C84F1 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/usr/lib/libc++.tbd"; sourceTree = DEVELOPER_DIR; };
+		F8BA6ADD1C9CBCC4003C84F1 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.2.sdk/System/Library/Frameworks/CFNetwork.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,12 +138,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8BA6ABA1C9CBC0F003C84F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA6AE61C9CBE7B003C84F1 /* Pods_PingpongScoreBoard.framework in Frameworks */,
+				F8BA6ADE1C9CBCC4003C84F1 /* CFNetwork.framework in Frameworks */,
+				F8BA6ADC1C9CBCBB003C84F1 /* libc++.tbd in Frameworks */,
+				F8BA6ADA1C9CBCAC003C84F1 /* libicucore.tbd in Frameworks */,
+				F8BA6AD81C9CBC8A003C84F1 /* SystemConfiguration.framework in Frameworks */,
+				F8BA6AD61C9CBC70003C84F1 /* Security.framework in Frameworks */,
+				F8BA6AD21C9CBC68003C84F1 /* Firebase.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		0D50B1CB1F858B7F3A7A3417 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F8BA6ADD1C9CBCC4003C84F1 /* CFNetwork.framework */,
+				F8BA6ADB1C9CBCBB003C84F1 /* libc++.tbd */,
+				F8BA6AD91C9CBCAC003C84F1 /* libicucore.tbd */,
+				F8BA6AD71C9CBC8A003C84F1 /* SystemConfiguration.framework */,
+				F8BA6AD51C9CBC70003C84F1 /* Security.framework */,
 				91C148ED1C8A3D24006745B5 /* SystemConfiguration.framework */,
 				91C148EB1C8A3D18006745B5 /* Security.framework */,
 				91C148E91C8A3D11006745B5 /* CFNetwork.framework */,
@@ -144,6 +201,7 @@
 				91ECC6011C8A3072009761C2 /* PingpongScoreBoard.app */,
 				91ECC6141C8A3072009761C2 /* PingpongScoreBoardTests.xctest */,
 				91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */,
+				F8BA6ABD1C9CBC0F003C84F1 /* PhonePingpongScoreBoard.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -160,6 +218,7 @@
 				91ECC60A1C8A3072009761C2 /* Main.storyboard */,
 				91ECC60D1C8A3072009761C2 /* Assets.xcassets */,
 				91ECC60F1C8A3072009761C2 /* Info.plist */,
+				F8BA6ABE1C9CBC0F003C84F1 /* PhonePingpongScoreBoard */,
 			);
 			path = PingpongScoreBoard;
 			sourceTree = "<group>";
@@ -180,6 +239,16 @@
 				91ECC6251C8A3072009761C2 /* Info.plist */,
 			);
 			path = PingpongScoreBoardUITests;
+			sourceTree = "<group>";
+		};
+		F8BA6ABE1C9CBC0F003C84F1 /* PhonePingpongScoreBoard */ = {
+			isa = PBXGroup;
+			children = (
+				F8BA6AC31C9CBC0F003C84F1 /* Main.storyboard */,
+				F8BA6ACB1C9CBC0F003C84F1 /* Info.plist */,
+			);
+			name = PhonePingpongScoreBoard;
+			path = ../PhonePingpongScoreBoard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -241,6 +310,24 @@
 			productReference = 91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F8BA6ABC1C9CBC0F003C84F1 /* PhonePingpongScoreBoard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F8BA6ACE1C9CBC0F003C84F1 /* Build configuration list for PBXNativeTarget "PhonePingpongScoreBoard" */;
+			buildPhases = (
+				F8BA6AB91C9CBC0F003C84F1 /* Sources */,
+				F8BA6ABA1C9CBC0F003C84F1 /* Frameworks */,
+				F8BA6ABB1C9CBC0F003C84F1 /* Resources */,
+				F8BA6AD41C9CBC68003C84F1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhonePingpongScoreBoard;
+			productName = PhonePingpongScoreBoard;
+			productReference = F8BA6ABD1C9CBC0F003C84F1 /* PhonePingpongScoreBoard.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,6 +350,9 @@
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 91ECC6001C8A3072009761C2;
 					};
+					F8BA6ABC1C9CBC0F003C84F1 = {
+						CreatedOnToolsVersion = 7.2.1;
+					};
 				};
 			};
 			buildConfigurationList = 91ECC5FC1C8A3072009761C2 /* Build configuration list for PBXProject "PingpongScoreBoard" */;
@@ -281,6 +371,7 @@
 				91ECC6001C8A3072009761C2 /* PingpongScoreBoard */,
 				91ECC6131C8A3072009761C2 /* PingpongScoreBoardTests */,
 				91ECC61E1C8A3072009761C2 /* PingpongScoreBoardUITests */,
+				F8BA6ABC1C9CBC0F003C84F1 /* PhonePingpongScoreBoard */,
 			);
 		};
 /* End PBXProject section */
@@ -306,6 +397,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F8BA6ABB1C9CBC0F003C84F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA6AE51C9CBD21003C84F1 /* Assets.xcassets in Resources */,
+				F8BA6AC51C9CBC0F003C84F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -389,6 +489,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F8BA6AB91C9CBC0F003C84F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8BA6AE41C9CBCF3003C84F1 /* AppDelegate.swift in Sources */,
+				F8BA6AE21C9CBCE9003C84F1 /* SecondViewController.swift in Sources */,
+				F8BA6AE01C9CBCD1003C84F1 /* PlayerTableViewController.swift in Sources */,
+				F8BA6AE11C9CBCE6003C84F1 /* User.swift in Sources */,
+				F8BA6ADF1C9CBCCD003C84F1 /* PingpongAPI.swift in Sources */,
+				F8BA6AE31C9CBCEF003C84F1 /* FirstViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -409,6 +522,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				91ECC60B1C8A3072009761C2 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F8BA6AC31C9CBC0F003C84F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F8BA6AC41C9CBC0F003C84F1 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -581,6 +702,44 @@
 			};
 			name = Release;
 		};
+		F8BA6ACC1C9CBC0F003C84F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhonePingpongScoreBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PhonePingpongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F8BA6ACD1C9CBC0F003C84F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = PhonePingpongScoreBoard/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PhonePingpongScoreBoard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -619,6 +778,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		F8BA6ACE1C9CBC0F003C84F1 /* Build configuration list for PBXNativeTarget "PhonePingpongScoreBoard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F8BA6ACC1C9CBC0F003C84F1 /* Debug */,
+				F8BA6ACD1C9CBC0F003C84F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
