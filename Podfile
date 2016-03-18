@@ -2,7 +2,7 @@ platform :tvos, '9.0'
 use_frameworks!
 
 target 'PingpongScoreBoard' do
-	pod 'Alamofire'
+  pod 'Alamofire'
 end
 
 target 'PingpongScoreBoardTests' do

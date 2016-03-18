@@ -1,0 +1,18 @@
+
+platform :ios, '9.2'
+use_frameworks!
+
+target 'PingPongPhoneApp' do
+      pod 'Alamofire'
+      pod 'Firebase'
+
+end
+
+target 'PingPongPhoneAppTests' do
+
+end
+
+target 'PingPongPhoneAppUITests' do
+
+end
+

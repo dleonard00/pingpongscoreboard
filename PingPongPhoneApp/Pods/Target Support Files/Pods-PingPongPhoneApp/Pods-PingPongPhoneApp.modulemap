@@ -1,0 +1,6 @@
+framework module Pods_PingPongPhoneApp {
+  umbrella header "Pods-PingPongPhoneApp-umbrella.h"
+
+  export *
+  module * { export * }
+}
