@@ -11,7 +11,6 @@ import Firebase
 
 let ref = Firebase(url: "https://pingpongscoreboard.firebaseio.com")
 
-
 func createNewUser(firstname: String, lastname: String, success: (() -> Void)?, failure: (() -> Void)?){
     let newGroupRef = ref.childByAppendingPath("users").childByAutoId()
     let newGroup = ["firstname": firstname, "lastname": lastname, "created": FirebaseServerValue.timestamp()]

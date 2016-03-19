@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		2AECE8D36570F8F8FFC01036 /* Pods_PingpongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */; };
+		91A0F14E1C9CAF2000FDD207 /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A0F14D1C9CAF2000FDD207 /* Players.storyboard */; };
+		91A0F1501C9CBD7D00FDD207 /* AddPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */; };
+		91A0F1521C9CBE7E00FDD207 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */; };
 		91C148E21C8A3AC1006745B5 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */; };
 		91C148E41C8A3C93006745B5 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E31C8A3C93006745B5 /* Firebase.framework */; };
 		91C148E61C8A3CFA006745B5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E51C8A3CFA006745B5 /* libicucore.tbd */; };
@@ -45,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
+		91A0F14D1C9CAF2000FDD207 /* Players.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Players.storyboard; sourceTree = "<group>"; };
+		91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPlayer.storyboard; sourceTree = "<group>"; };
+		91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
 		91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
 		91C148E31C8A3C93006745B5 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		91C148E51C8A3CFA006745B5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -154,10 +160,13 @@
 				91ECC6041C8A3072009761C2 /* AppDelegate.swift */,
 				91ECC6061C8A3072009761C2 /* FirstViewController.swift */,
 				91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */,
-				91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */,
 				91C148F11C8A48AC006745B5 /* User.swift */,
 				91ECC6081C8A3072009761C2 /* SecondViewController.swift */,
 				91ECC60A1C8A3072009761C2 /* Main.storyboard */,
+				91A0F14D1C9CAF2000FDD207 /* Players.storyboard */,
+				91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */,
+				91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */,
+				91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */,
 				91ECC60D1C8A3072009761C2 /* Assets.xcassets */,
 				91ECC60F1C8A3072009761C2 /* Info.plist */,
 			);
@@ -291,7 +300,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */,
+				91A0F1501C9CBD7D00FDD207 /* AddPlayer.storyboard in Resources */,
 				91ECC60C1C8A3072009761C2 /* Main.storyboard in Resources */,
+				91A0F14E1C9CAF2000FDD207 /* Players.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -364,6 +375,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A0F1521C9CBE7E00FDD207 /* AddPlayerViewController.swift in Sources */,
 				91ECC6091C8A3072009761C2 /* SecondViewController.swift in Sources */,
 				91C148F01C8A3ED9006745B5 /* PingpongAPI.swift in Sources */,
 				91C148F21C8A48AC006745B5 /* User.swift in Sources */,

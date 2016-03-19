@@ -47,7 +47,7 @@ class FirstViewController: UIViewController {
         print("swipedRight")
         if gameOver == true { return }
 
-        player2Score = player2Score < 21 ? player2Score + 1 : player2Score
+        player2Score = player2Score + 1
         player2ScoreLabel.text = player2Score.description
         if player2Score > 10 {
             determineWinner()
@@ -59,7 +59,7 @@ class FirstViewController: UIViewController {
         print("swipedLeft")
         if gameOver == true { return }
 
-        player1Score = player1Score < 21 ? player1Score + 1 : player1Score
+        player1Score = player1Score + 1
         player1ScoreLabel.text = player1Score.description
         
         if player1Score > 10 {
@@ -139,6 +139,17 @@ class FirstViewController: UIViewController {
         gameOver = false
         tento10 = false
     }
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        guard let navController = segue.destinationViewController as? UINavigationController, PTVC = navController.topViewController as? PlayerTableViewController else {
+            return
+        }
+        PTVC.firstVC = self
+        
+    }
+
 
 }
 
