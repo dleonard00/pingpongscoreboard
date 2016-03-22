@@ -10,6 +10,14 @@
 		6801D8A835A19CC16868F74A /* Pods_PingPongPhoneAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 159A6EC12170291998B7AB60 /* Pods_PingPongPhoneAppTests.framework */; };
 		7A9665A9608ABC49B5753D7F /* Pods_PingPongPhoneApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C54058B5B087494C38E110FA /* Pods_PingPongPhoneApp.framework */; };
 		99C45D11F979EB54C77E6F56 /* Pods_PingPongPhoneAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FCEEBA8309F055B55AD3472F /* Pods_PingPongPhoneAppUITests.framework */; };
+		F80B41051CA1F69700C23144 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F80B41031CA1F69700C23144 /* Interface.storyboard */; };
+		F80B41071CA1F69700C23144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80B41061CA1F69700C23144 /* Assets.xcassets */; };
+		F80B410E1CA1F69700C23144 /* PingPongWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F80B410D1CA1F69700C23144 /* PingPongWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F80B41151CA1F69700C23144 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80B41141CA1F69700C23144 /* InterfaceController.swift */; };
+		F80B41171CA1F69700C23144 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80B41161CA1F69700C23144 /* ExtensionDelegate.swift */; };
+		F80B41191CA1F69700C23144 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80B41181CA1F69700C23144 /* NotificationController.swift */; };
+		F80B411B1CA1F69700C23144 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80B411A1CA1F69700C23144 /* Assets.xcassets */; };
+		F80B411F1CA1F69800C23144 /* PingPongWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = F80B41011CA1F69700C23144 /* PingPongWatch.app */; };
 		F8BA6AF91C9CC06E003C84F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BA6AF71C9CC06E003C84F1 /* Main.storyboard */; };
 		F8BA6AFE1C9CC06E003C84F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F8BA6AFC1C9CC06E003C84F1 /* LaunchScreen.storyboard */; };
 		F8BA6B091C9CC06E003C84F1 /* PingPongPhoneAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F8BA6B081C9CC06E003C84F1 /* PingPongPhoneAppTests.swift */; };
@@ -24,6 +32,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F80B410F1CA1F69700C23144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BA6AE81C9CC06E003C84F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80B410C1CA1F69700C23144;
+			remoteInfo = "PingPongWatch Extension";
+		};
+		F80B411D1CA1F69800C23144 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F8BA6AE81C9CC06E003C84F1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80B41001CA1F69700C23144;
+			remoteInfo = PingPongWatch;
+		};
 		F8BA6B051C9CC06E003C84F1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F8BA6AE81C9CC06E003C84F1 /* Project object */;
@@ -40,6 +62,31 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F80B41251CA1F69800C23144 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F80B410E1CA1F69700C23144 /* PingPongWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80B41271CA1F69800C23144 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				F80B411F1CA1F69800C23144 /* PingPongWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0AB3C44E8446B4D62E8A28A2 /* Pods-PingPongPhoneApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongPhoneApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingPongPhoneApp/Pods-PingPongPhoneApp.release.xcconfig"; sourceTree = "<group>"; };
 		159A6EC12170291998B7AB60 /* Pods_PingPongPhoneAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongPhoneAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -49,6 +96,17 @@
 		C54058B5B087494C38E110FA /* Pods_PingPongPhoneApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingPongPhoneApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E88DB1A8557077A458970583 /* Pods-PingPongPhoneAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongPhoneAppUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingPongPhoneAppUITests/Pods-PingPongPhoneAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		F3D2D2549C7958D5836FD696 /* Pods-PingPongPhoneApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingPongPhoneApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingPongPhoneApp/Pods-PingPongPhoneApp.debug.xcconfig"; sourceTree = "<group>"; };
+		F80B41011CA1F69700C23144 /* PingPongWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80B41041CA1F69700C23144 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F80B41061CA1F69700C23144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F80B41081CA1F69700C23144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F80B410D1CA1F69700C23144 /* PingPongWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PingPongWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80B41131CA1F69700C23144 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F80B41141CA1F69700C23144 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F80B41161CA1F69700C23144 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		F80B41181CA1F69700C23144 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F80B411A1CA1F69700C23144 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F80B411C1CA1F69700C23144 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F8BA6AF01C9CC06E003C84F1 /* PingPongPhoneApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PingPongPhoneApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F8BA6AF81C9CC06E003C84F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F8BA6AFD1C9CC06E003C84F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -71,6 +129,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		F80B410A1CA1F69700C23144 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8BA6AED1C9CC06E003C84F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -121,12 +186,45 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		F80B41021CA1F69700C23144 /* PingPongWatch */ = {
+			isa = PBXGroup;
+			children = (
+				F80B41031CA1F69700C23144 /* Interface.storyboard */,
+				F80B41061CA1F69700C23144 /* Assets.xcassets */,
+				F80B41081CA1F69700C23144 /* Info.plist */,
+			);
+			path = PingPongWatch;
+			sourceTree = "<group>";
+		};
+		F80B41111CA1F69700C23144 /* PingPongWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F80B41141CA1F69700C23144 /* InterfaceController.swift */,
+				F80B41161CA1F69700C23144 /* ExtensionDelegate.swift */,
+				F80B41181CA1F69700C23144 /* NotificationController.swift */,
+				F80B411A1CA1F69700C23144 /* Assets.xcassets */,
+				F80B411C1CA1F69700C23144 /* Info.plist */,
+				F80B41121CA1F69700C23144 /* Supporting Files */,
+			);
+			path = "PingPongWatch Extension";
+			sourceTree = "<group>";
+		};
+		F80B41121CA1F69700C23144 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F80B41131CA1F69700C23144 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		F8BA6AE71C9CC06E003C84F1 = {
 			isa = PBXGroup;
 			children = (
 				F8BA6AF21C9CC06E003C84F1 /* PingPongPhoneApp */,
 				F8BA6B071C9CC06E003C84F1 /* PingPongPhoneAppTests */,
 				F8BA6B121C9CC06E003C84F1 /* PingPongPhoneAppUITests */,
+				F80B41021CA1F69700C23144 /* PingPongWatch */,
+				F80B41111CA1F69700C23144 /* PingPongWatch Extension */,
 				F8BA6AF11C9CC06E003C84F1 /* Products */,
 				E62A7520F255487D98506268 /* Pods */,
 				C37EFB650FAD7066FCED0FBE /* Frameworks */,
@@ -139,6 +237,8 @@
 				F8BA6AF01C9CC06E003C84F1 /* PingPongPhoneApp.app */,
 				F8BA6B041C9CC06E003C84F1 /* PingPongPhoneAppTests.xctest */,
 				F8BA6B0F1C9CC06E003C84F1 /* PingPongPhoneAppUITests.xctest */,
+				F80B41011CA1F69700C23144 /* PingPongWatch.app */,
+				F80B410D1CA1F69700C23144 /* PingPongWatch Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +282,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		F80B41001CA1F69700C23144 /* PingPongWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80B41261CA1F69800C23144 /* Build configuration list for PBXNativeTarget "PingPongWatch" */;
+			buildPhases = (
+				F80B40FF1CA1F69700C23144 /* Resources */,
+				F80B41251CA1F69800C23144 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F80B41101CA1F69700C23144 /* PBXTargetDependency */,
+			);
+			name = PingPongWatch;
+			productName = PingPongWatch;
+			productReference = F80B41011CA1F69700C23144 /* PingPongWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		F80B410C1CA1F69700C23144 /* PingPongWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80B41241CA1F69800C23144 /* Build configuration list for PBXNativeTarget "PingPongWatch Extension" */;
+			buildPhases = (
+				F80B41091CA1F69700C23144 /* Sources */,
+				F80B410A1CA1F69700C23144 /* Frameworks */,
+				F80B410B1CA1F69700C23144 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PingPongWatch Extension";
+			productName = "PingPongWatch Extension";
+			productReference = F80B410D1CA1F69700C23144 /* PingPongWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		F8BA6AEF1C9CC06E003C84F1 /* PingPongPhoneApp */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F8BA6B181C9CC06E003C84F1 /* Build configuration list for PBXNativeTarget "PingPongPhoneApp" */;
@@ -192,10 +326,12 @@
 				F8BA6AEE1C9CC06E003C84F1 /* Resources */,
 				0A3B33F190E17F89D46062F1 /* Embed Pods Frameworks */,
 				A365AB6ADF425F531E55EDB8 /* Copy Pods Resources */,
+				F80B41271CA1F69800C23144 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F80B411E1CA1F69800C23144 /* PBXTargetDependency */,
 			);
 			name = PingPongPhoneApp;
 			productName = PingPongPhoneApp;
@@ -249,10 +385,17 @@
 		F8BA6AE81C9CC06E003C84F1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = MacMeDan;
 				TargetAttributes = {
+					F80B41001CA1F69700C23144 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GTN6L5ER8Y;
+					};
+					F80B410C1CA1F69700C23144 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					F8BA6AEF1C9CC06E003C84F1 = {
 						CreatedOnToolsVersion = 7.2.1;
 						DevelopmentTeam = GTN6L5ER8Y;
@@ -283,11 +426,30 @@
 				F8BA6AEF1C9CC06E003C84F1 /* PingPongPhoneApp */,
 				F8BA6B031C9CC06E003C84F1 /* PingPongPhoneAppTests */,
 				F8BA6B0E1C9CC06E003C84F1 /* PingPongPhoneAppUITests */,
+				F80B41001CA1F69700C23144 /* PingPongWatch */,
+				F80B410C1CA1F69700C23144 /* PingPongWatch Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		F80B40FF1CA1F69700C23144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B41071CA1F69700C23144 /* Assets.xcassets in Resources */,
+				F80B41051CA1F69700C23144 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80B410B1CA1F69700C23144 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B411B1CA1F69700C23144 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8BA6AEE1C9CC06E003C84F1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -438,6 +600,16 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		F80B41091CA1F69700C23144 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80B41191CA1F69700C23144 /* NotificationController.swift in Sources */,
+				F80B41171CA1F69700C23144 /* ExtensionDelegate.swift in Sources */,
+				F80B41151CA1F69700C23144 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F8BA6AEC1C9CC06E003C84F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -470,6 +642,16 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F80B41101CA1F69700C23144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80B410C1CA1F69700C23144 /* PingPongWatch Extension */;
+			targetProxy = F80B410F1CA1F69700C23144 /* PBXContainerItemProxy */;
+		};
+		F80B411E1CA1F69800C23144 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80B41001CA1F69700C23144 /* PingPongWatch */;
+			targetProxy = F80B411D1CA1F69800C23144 /* PBXContainerItemProxy */;
+		};
 		F8BA6B061C9CC06E003C84F1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F8BA6AEF1C9CC06E003C84F1 /* PingPongPhoneApp */;
@@ -483,6 +665,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		F80B41031CA1F69700C23144 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F80B41041CA1F69700C23144 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
 		F8BA6AF71C9CC06E003C84F1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -502,6 +692,72 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		F80B41201CA1F69800C23144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PingPongWatch_Extension;
+				INFOPLIST_FILE = PingPongWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PingPongPhoneApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F80B41211CA1F69800C23144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = PingPongWatch_Extension;
+				INFOPLIST_FILE = PingPongWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PingPongPhoneApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		F80B41221CA1F69800C23144 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "PingPongWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PingPongPhoneApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		F80B41231CA1F69800C23144 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				INFOPLIST_FILE = "PingPongWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.PingPongPhoneApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
 		F8BA6B161C9CC06E003C84F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -669,6 +925,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		F80B41241CA1F69800C23144 /* Build configuration list for PBXNativeTarget "PingPongWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80B41221CA1F69800C23144 /* Debug */,
+				F80B41231CA1F69800C23144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F80B41261CA1F69800C23144 /* Build configuration list for PBXNativeTarget "PingPongWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80B41201CA1F69800C23144 /* Debug */,
+				F80B41211CA1F69800C23144 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		F8BA6AEB1C9CC06E003C84F1 /* Build configuration list for PBXProject "PingPongPhoneApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

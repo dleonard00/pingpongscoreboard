@@ -7,8 +7,11 @@
 //
 
 import UIKit
+import WatchConnectivity
 
 class FirstViewController: UIViewController {
+    private var counterData = [Int]()
+    private let session: WCSession? = WCSession.isSupported() ? WCSession.defaultSession() : nil
 
     @IBOutlet weak var player1Label: UILabel!
     @IBOutlet weak var player1ScoreLabel: UILabel!
@@ -24,6 +27,7 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureWCSession()
         // Do any additional setup after loading the view, typically from a nib.
         resetGameParameters()
         setupGestureRecognizers()
@@ -31,38 +35,40 @@ class FirstViewController: UIViewController {
         self.gameButton.setTitle("Start Game", forState:.Normal)
     }
     
+    private func configureWCSession() {
+        session?.delegate = self
+        session?.activateSession()
+    }
+    
     func setupGestureRecognizers() {
-        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedRight")
+        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(addP2))
         swipeRightRecognizer.direction = .Right
         self.view.addGestureRecognizer(swipeRightRecognizer)
-        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedLeft")
+        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(addP1))
         swipeLeftRecognizer.direction = .Left
         self.view.addGestureRecognizer(swipeLeftRecognizer)
-        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedDown")
+        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedDown))
         swipeDownRecognizer.direction = .Down
         self.view.addGestureRecognizer(swipeDownRecognizer)
     }
-
-    func swipedRight(){
-        print("swipedRight")
+    
+    func addP1(){
+        print("Player1 Scored")
         if gameOver == true { return }
-
-        player2Score = player2Score < 21 ? player2Score + 1 : player2Score
-        player2ScoreLabel.text = player2Score.description
-        if player2Score > 10 {
+        player1Score = player1Score < 50 ? player1Score + 1 : player1Score
+        player1ScoreLabel.text = player1Score.description
+        if player1Score > 10 {
             determineWinner()
         }
         checkWhoServesNext()
     }
     
-    func swipedLeft(){
-        print("swipedLeft")
+    func addP2(){
+        print("Player2 Scored")
         if gameOver == true { return }
-
-        player1Score = player1Score < 21 ? player1Score + 1 : player1Score
-        player1ScoreLabel.text = player1Score.description
-        
-        if player1Score > 10 {
+        player2Score = player2Score < 50 ? player2Score + 1 : player2Score
+        player2ScoreLabel.text = player2Score.description
+        if player2Score > 10 {
             determineWinner()
         }
         checkWhoServesNext()
@@ -80,13 +86,22 @@ class FirstViewController: UIViewController {
         }
     }
     
-    func swipedDown(){
-        print("swipedDown")
+    func minusP1(){
         if gameOver == true { return }
+        print("Player1 didn't actually score")
         player1Score = player1Score > 0 ? player1Score - 1 : player1Score
-        player2Score = player2Score > 0 ? player2Score - 1 : player2Score
-
+        
         player1ScoreLabel.text = player1Score.description
+        
+        checkWhoServesNext()
+    }
+    
+    func minusP2(){
+         print("Player2 didn't actually score")
+        if gameOver == true { return }
+        
+        player2Score = player2Score > 0 ? player2Score - 1 : player2Score
+        
         player2ScoreLabel.text = player2Score.description
         checkWhoServesNext()
     }
@@ -107,6 +122,18 @@ class FirstViewController: UIViewController {
         }))
         self.presentViewController(alert, animated: true, completion: nil)
     }
+    
+    func swipedDown(){
+        print("swipedDown")
+        if gameOver == true { return }
+        player1Score = player1Score > 0 ? player1Score - 1 : player1Score
+        player2Score = player2Score > 0 ? player2Score - 1 : player2Score
+        
+        player1ScoreLabel.text = player1Score.description
+        player2ScoreLabel.text = player2Score.description
+        checkWhoServesNext()
+    }
+
     
     func checkWhoServesNext(){
         if player1Score == 10 && player2Score == 10 {
@@ -141,4 +168,34 @@ class FirstViewController: UIViewController {
     }
 
 }
+
+extension FirstViewController: WCSessionDelegate {
+    
+    func session(session: WCSession, didReceiveMessage message: [String : AnyObject], replyHandler: ([String : AnyObject]) -> Void) {
+        
+        //Use this to update the UI instantaneously (otherwise, takes a little while)
+        dispatch_async(dispatch_get_main_queue()) {
+            //let applicationData = ["Player" : 1, "PosOrNeg":false]
+            // Determin wich Player
+            // Determin + or -
+            //Change score
+            if let player = message["Player"] as? Int, addPoint = message["PosOrNeg"] as? Bool {
+                if player == 1 {
+                    if addPoint {
+                        self.addP1()
+                    } else {
+                        self.minusP1()
+                    }
+                } else {
+                    if addPoint {
+                        self.addP2()
+                    } else {
+                        self.minusP2()
+                    }
+                }
+            }
+        }
+    }
+}
+
 
