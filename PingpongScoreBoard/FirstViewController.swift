@@ -24,7 +24,6 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         resetGameParameters()
         setupGestureRecognizers()
         gameOver = true // wait for user to start game before enabling gestures
@@ -52,13 +51,13 @@ class FirstViewController: UIViewController {
     }
     
     func setupGestureRecognizers() {
-        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedRight")
+        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedRight))
         swipeRightRecognizer.direction = .Right
         self.view.addGestureRecognizer(swipeRightRecognizer)
-        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedLeft")
+        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedLeft))
         swipeLeftRecognizer.direction = .Left
         self.view.addGestureRecognizer(swipeLeftRecognizer)
-        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedDown")
+        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedDown))
         swipeDownRecognizer.direction = .Down
         self.view.addGestureRecognizer(swipeDownRecognizer)
     }
@@ -161,16 +160,12 @@ class FirstViewController: UIViewController {
         tento10 = false
     }
     
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         guard let navController = segue.destinationViewController as? UINavigationController, PTVC = navController.topViewController as? PlayerTableViewController else {
             return
         }
         PTVC.firstVC = self
-        
     }
-    
-    
 }
 
