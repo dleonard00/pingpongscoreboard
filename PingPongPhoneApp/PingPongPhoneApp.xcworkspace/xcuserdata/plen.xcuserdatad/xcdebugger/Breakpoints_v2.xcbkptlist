@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../PingpongScoreBoard/FirstViewController.swift"
+            timestampString = "480379672.4115"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "session(_:didReceiveMessage:replyHandler:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PingPongPhoneApp.FirstViewController.(session (__ObjC.WCSession, didReceiveMessage : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, replyHandler : (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "PingPongPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/plen/Desktop/swift/pingpongscoreboard/PingpongScoreBoard/FirstViewController.swift"
+                  timestampString = "480379733.929228"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "38">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "PingPongPhoneApp.FirstViewController.(session (__ObjC.WCSession, didReceiveMessage : Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;, replyHandler : (Swift.Dictionary&lt;Swift.String, Swift.AnyObject&gt;) -&gt; ()) -&gt; ()).(closure #1)"
+                  moduleName = "PingPongPhoneApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/plen/Desktop/swift/pingpongscoreboard/PingpongScoreBoard/FirstViewController.swift"
+                  timestampString = "480379733.929373"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "182"
+                  endingLineNumber = "182"
+                  offsetFromSymbolStart = "343">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
