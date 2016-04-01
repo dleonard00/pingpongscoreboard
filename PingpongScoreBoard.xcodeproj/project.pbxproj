@@ -7,7 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2AECE8D36570F8F8FFC01036 /* Pods_PingpongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */; };
+		10C421DF282BEA9E45EE66AA /* Pods_PingpongScoreBoardUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A49B6F2F275834FC942F297 /* Pods_PingpongScoreBoardUITests.framework */; };
+		1FB505CC7F0EAA2735BA24FC /* Pods_PingpongScoreBoardTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 415D8997E63AB2AA57B07BBD /* Pods_PingpongScoreBoardTests.framework */; };
+		7A11CCFB4D06CBE26ED1A782 /* Pods_ScoreTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 281F6B3659B885B4350115A7 /* Pods_ScoreTracker.framework */; };
+		91A0F14E1C9CAF2000FDD207 /* Players.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A0F14D1C9CAF2000FDD207 /* Players.storyboard */; };
+		91A0F1501C9CBD7D00FDD207 /* AddPlayer.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */; };
+		91A0F1521C9CBE7E00FDD207 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */; };
 		91C148E21C8A3AC1006745B5 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */; };
 		91C148E41C8A3C93006745B5 /* Firebase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E31C8A3C93006745B5 /* Firebase.framework */; };
 		91C148E61C8A3CFA006745B5 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 91C148E51C8A3CFA006745B5 /* libicucore.tbd */; };
@@ -24,6 +29,16 @@
 		91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60D1C8A3072009761C2 /* Assets.xcassets */; };
 		91ECC6191C8A3072009761C2 /* PingpongScoreBoardTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6181C8A3072009761C2 /* PingpongScoreBoardTests.swift */; };
 		91ECC6241C8A3072009761C2 /* PingpongScoreBoardUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */; };
+		BA95F39F2AAD33B5E18F7C7E /* Pods_PingpongScoreBoard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0865B151870481E6EAF110CF /* Pods_PingpongScoreBoard.framework */; };
+		F82F4B3B1CAF106400D2B755 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F82F4B3A1CAF106400D2B755 /* Main.storyboard */; };
+		F82F4B3C1CAF10FD00D2B755 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6041C8A3072009761C2 /* AppDelegate.swift */; };
+		F82F4B3D1CAF110200D2B755 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6061C8A3072009761C2 /* FirstViewController.swift */; };
+		F82F4B3E1CAF110400D2B755 /* PingpongAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */; };
+		F82F4B3F1CAF110700D2B755 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148F11C8A48AC006745B5 /* User.swift */; };
+		F82F4B401CAF110900D2B755 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91ECC6081C8A3072009761C2 /* SecondViewController.swift */; };
+		F82F4B411CAF110C00D2B755 /* PlayerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */; };
+		F82F4B421CAF110F00D2B755 /* AddPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */; };
+		F85CFB8B1CAF11B600147435 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91ECC60D1C8A3072009761C2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +59,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
+		0495356EA3CA5D49BB687F6E /* Pods-PingpongScoreBoardTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoardTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoardTests/Pods-PingpongScoreBoardTests.release.xcconfig"; sourceTree = "<group>"; };
+		0865B151870481E6EAF110CF /* Pods_PingpongScoreBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A49B6F2F275834FC942F297 /* Pods_PingpongScoreBoardUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoardUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E403EF653B5C26872D805A6 /* Pods-ScoreTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreTracker/Pods-ScoreTracker.release.xcconfig"; sourceTree = "<group>"; };
+		281F6B3659B885B4350115A7 /* Pods_ScoreTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScoreTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		415D8997E63AB2AA57B07BBD /* Pods_PingpongScoreBoardTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoardTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		91A0F14D1C9CAF2000FDD207 /* Players.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Players.storyboard; sourceTree = "<group>"; };
+		91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AddPlayer.storyboard; sourceTree = "<group>"; };
+		91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddPlayerViewController.swift; sourceTree = "<group>"; };
 		91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerTableViewController.swift; sourceTree = "<group>"; };
 		91C148E31C8A3C93006745B5 /* Firebase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Firebase.framework; sourceTree = "<group>"; };
 		91C148E51C8A3CFA006745B5 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
@@ -67,8 +90,15 @@
 		91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PingpongScoreBoardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		91ECC6231C8A3072009761C2 /* PingpongScoreBoardUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingpongScoreBoardUITests.swift; sourceTree = "<group>"; };
 		91ECC6251C8A3072009761C2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
-		DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PingpongScoreBoard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1E168A461E88B29B8088C98 /* Pods-PingpongScoreBoardTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoardTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoardTests/Pods-PingpongScoreBoardTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C43375E9238E2E2CCC5472C0 /* Pods-PingpongScoreBoard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.debug.xcconfig"; sourceTree = "<group>"; };
+		D406741B4E76F9DDDF37E619 /* Pods-PingpongScoreBoardUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoardUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoardUITests/Pods-PingpongScoreBoardUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D869F52CC88A659E23017564 /* Pods-PingpongScoreBoard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoard.release.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard.release.xcconfig"; sourceTree = "<group>"; };
+		EA22D7B90CC14EA662DC9FFC /* Pods-ScoreTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScoreTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScoreTracker/Pods-ScoreTracker.debug.xcconfig"; sourceTree = "<group>"; };
+		F82F4B281CAF0FAD00D2B755 /* ScoreTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScoreTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F82F4B361CAF0FAD00D2B755 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F82F4B3A1CAF106400D2B755 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		FC5481B27EE2773CBBFF742B /* Pods-PingpongScoreBoardUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PingpongScoreBoardUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PingpongScoreBoardUITests/Pods-PingpongScoreBoardUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +111,8 @@
 				91C148EA1C8A3D11006745B5 /* CFNetwork.framework in Frameworks */,
 				91C148E81C8A3D08006745B5 /* libc++.tbd in Frameworks */,
 				91C148E61C8A3CFA006745B5 /* libicucore.tbd in Frameworks */,
-				2AECE8D36570F8F8FFC01036 /* Pods_PingpongScoreBoard.framework in Frameworks */,
 				91C148E41C8A3C93006745B5 /* Firebase.framework in Frameworks */,
+				BA95F39F2AAD33B5E18F7C7E /* Pods_PingpongScoreBoard.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB505CC7F0EAA2735BA24FC /* Pods_PingpongScoreBoardTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -97,6 +128,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10C421DF282BEA9E45EE66AA /* Pods_PingpongScoreBoardUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82F4B251CAF0FAD00D2B755 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A11CCFB4D06CBE26ED1A782 /* Pods_ScoreTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,16 +152,25 @@
 				91C148E71C8A3D08006745B5 /* libc++.tbd */,
 				91C148E51C8A3CFA006745B5 /* libicucore.tbd */,
 				91C148E31C8A3C93006745B5 /* Firebase.framework */,
-				DD54B10D914598A8D7DD72D3 /* Pods_PingpongScoreBoard.framework */,
+				0865B151870481E6EAF110CF /* Pods_PingpongScoreBoard.framework */,
+				415D8997E63AB2AA57B07BBD /* Pods_PingpongScoreBoardTests.framework */,
+				0A49B6F2F275834FC942F297 /* Pods_PingpongScoreBoardUITests.framework */,
+				281F6B3659B885B4350115A7 /* Pods_ScoreTracker.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		61064F9B33B5868DDF82080A /* Pods */ = {
+		33D2231D3BEBBE8A021F4B88 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */,
-				4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */,
+				C43375E9238E2E2CCC5472C0 /* Pods-PingpongScoreBoard.debug.xcconfig */,
+				D869F52CC88A659E23017564 /* Pods-PingpongScoreBoard.release.xcconfig */,
+				C1E168A461E88B29B8088C98 /* Pods-PingpongScoreBoardTests.debug.xcconfig */,
+				0495356EA3CA5D49BB687F6E /* Pods-PingpongScoreBoardTests.release.xcconfig */,
+				FC5481B27EE2773CBBFF742B /* Pods-PingpongScoreBoardUITests.debug.xcconfig */,
+				D406741B4E76F9DDDF37E619 /* Pods-PingpongScoreBoardUITests.release.xcconfig */,
+				EA22D7B90CC14EA662DC9FFC /* Pods-ScoreTracker.debug.xcconfig */,
+				0E403EF653B5C26872D805A6 /* Pods-ScoreTracker.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -132,9 +181,10 @@
 				91ECC6031C8A3072009761C2 /* PingpongScoreBoard */,
 				91ECC6171C8A3072009761C2 /* PingpongScoreBoardTests */,
 				91ECC6221C8A3072009761C2 /* PingpongScoreBoardUITests */,
+				F82F4B291CAF0FAD00D2B755 /* ScoreTracker */,
 				91ECC6021C8A3072009761C2 /* Products */,
-				61064F9B33B5868DDF82080A /* Pods */,
 				0D50B1CB1F858B7F3A7A3417 /* Frameworks */,
+				33D2231D3BEBBE8A021F4B88 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -144,6 +194,7 @@
 				91ECC6011C8A3072009761C2 /* PingpongScoreBoard.app */,
 				91ECC6141C8A3072009761C2 /* PingpongScoreBoardTests.xctest */,
 				91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */,
+				F82F4B281CAF0FAD00D2B755 /* ScoreTracker.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -154,10 +205,13 @@
 				91ECC6041C8A3072009761C2 /* AppDelegate.swift */,
 				91ECC6061C8A3072009761C2 /* FirstViewController.swift */,
 				91C148EF1C8A3ED9006745B5 /* PingpongAPI.swift */,
-				91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */,
 				91C148F11C8A48AC006745B5 /* User.swift */,
 				91ECC6081C8A3072009761C2 /* SecondViewController.swift */,
 				91ECC60A1C8A3072009761C2 /* Main.storyboard */,
+				91A0F14D1C9CAF2000FDD207 /* Players.storyboard */,
+				91C148E11C8A3AC1006745B5 /* PlayerTableViewController.swift */,
+				91A0F14F1C9CBD7D00FDD207 /* AddPlayer.storyboard */,
+				91A0F1511C9CBE7E00FDD207 /* AddPlayerViewController.swift */,
 				91ECC60D1C8A3072009761C2 /* Assets.xcassets */,
 				91ECC60F1C8A3072009761C2 /* Info.plist */,
 			);
@@ -182,6 +236,15 @@
 			path = PingpongScoreBoardUITests;
 			sourceTree = "<group>";
 		};
+		F82F4B291CAF0FAD00D2B755 /* ScoreTracker */ = {
+			isa = PBXGroup;
+			children = (
+				F82F4B3A1CAF106400D2B755 /* Main.storyboard */,
+				F82F4B361CAF0FAD00D2B755 /* Info.plist */,
+			);
+			path = ScoreTracker;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -189,12 +252,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91ECC6281C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoard" */;
 			buildPhases = (
-				731C97893C94DE0D2BC839F7 /* Check Pods Manifest.lock */,
+				0496F4A7431FF6A65E3E2B59 /* 📦 Check Pods Manifest.lock */,
 				91ECC5FD1C8A3072009761C2 /* Sources */,
 				91ECC5FE1C8A3072009761C2 /* Frameworks */,
 				91ECC5FF1C8A3072009761C2 /* Resources */,
-				D45EFA8353B25D6D050A98DB /* Embed Pods Frameworks */,
-				9AF8C52C4B730C443EA0F491 /* Copy Pods Resources */,
+				6FA684FABAD13A0E1D83B69E /* 📦 Embed Pods Frameworks */,
+				04C7A6E835F4082FD8893D38 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -209,9 +272,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91ECC62B1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardTests" */;
 			buildPhases = (
+				6878F6B43DA77352B9159C5B /* 📦 Check Pods Manifest.lock */,
 				91ECC6101C8A3072009761C2 /* Sources */,
 				91ECC6111C8A3072009761C2 /* Frameworks */,
 				91ECC6121C8A3072009761C2 /* Resources */,
+				D2C4D493F317FBAAD3540994 /* 📦 Embed Pods Frameworks */,
+				9D6D30499B0820CCCDE794C1 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -227,9 +293,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 91ECC62E1C8A3072009761C2 /* Build configuration list for PBXNativeTarget "PingpongScoreBoardUITests" */;
 			buildPhases = (
+				5187A6995BD81482AE64F34B /* 📦 Check Pods Manifest.lock */,
 				91ECC61B1C8A3072009761C2 /* Sources */,
 				91ECC61C1C8A3072009761C2 /* Frameworks */,
 				91ECC61D1C8A3072009761C2 /* Resources */,
+				78AFC6231A31BF6B8DB39133 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -241,13 +309,33 @@
 			productReference = 91ECC61F1C8A3072009761C2 /* PingpongScoreBoardUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		F82F4B271CAF0FAD00D2B755 /* ScoreTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F82F4B391CAF0FAD00D2B755 /* Build configuration list for PBXNativeTarget "ScoreTracker" */;
+			buildPhases = (
+				A3F0482604DAB172A37CE7CD /* 📦 Check Pods Manifest.lock */,
+				F82F4B241CAF0FAD00D2B755 /* Sources */,
+				F82F4B251CAF0FAD00D2B755 /* Frameworks */,
+				F82F4B261CAF0FAD00D2B755 /* Resources */,
+				3FE9505BF5F354ED5B6AFAE8 /* 📦 Embed Pods Frameworks */,
+				05B9C819CBF6A9F989AE821B /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScoreTracker;
+			productName = ScoreTracker;
+			productReference = F82F4B281CAF0FAD00D2B755 /* ScoreTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		91ECC5F91C8A3072009761C2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = Weave;
 				TargetAttributes = {
@@ -262,6 +350,10 @@
 					91ECC61E1C8A3072009761C2 = {
 						CreatedOnToolsVersion = 7.2.1;
 						TestTargetID = 91ECC6001C8A3072009761C2;
+					};
+					F82F4B271CAF0FAD00D2B755 = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = GTN6L5ER8Y;
 					};
 				};
 			};
@@ -281,6 +373,7 @@
 				91ECC6001C8A3072009761C2 /* PingpongScoreBoard */,
 				91ECC6131C8A3072009761C2 /* PingpongScoreBoardTests */,
 				91ECC61E1C8A3072009761C2 /* PingpongScoreBoardUITests */,
+				F82F4B271CAF0FAD00D2B755 /* ScoreTracker */,
 			);
 		};
 /* End PBXProject section */
@@ -291,7 +384,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				91ECC60E1C8A3072009761C2 /* Assets.xcassets in Resources */,
+				91A0F1501C9CBD7D00FDD207 /* AddPlayer.storyboard in Resources */,
 				91ECC60C1C8A3072009761C2 /* Main.storyboard in Resources */,
+				91A0F14E1C9CAF2000FDD207 /* Players.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -309,17 +404,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F82F4B261CAF0FAD00D2B755 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F85CFB8B1CAF11B600147435 /* Assets.xcassets in Resources */,
+				F82F4B3B1CAF106400D2B755 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		731C97893C94DE0D2BC839F7 /* Check Pods Manifest.lock */ = {
+		0496F4A7431FF6A65E3E2B59 /* 📦 Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "📦 Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,14 +431,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		9AF8C52C4B730C443EA0F491 /* Copy Pods Resources */ = {
+		04C7A6E835F4082FD8893D38 /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "📦 Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -342,19 +446,139 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		D45EFA8353B25D6D050A98DB /* Embed Pods Frameworks */ = {
+		05B9C819CBF6A9F989AE821B /* 📦 Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreTracker/Pods-ScoreTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3FE9505BF5F354ED5B6AFAE8 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScoreTracker/Pods-ScoreTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5187A6995BD81482AE64F34B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6878F6B43DA77352B9159C5B /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		6FA684FABAD13A0E1D83B69E /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoard/Pods-PingpongScoreBoard-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78AFC6231A31BF6B8DB39133 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoardUITests/Pods-PingpongScoreBoardUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D6D30499B0820CCCDE794C1 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoardTests/Pods-PingpongScoreBoardTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F0482604DAB172A37CE7CD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		D2C4D493F317FBAAD3540994 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PingpongScoreBoardTests/Pods-PingpongScoreBoardTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -364,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				91A0F1521C9CBE7E00FDD207 /* AddPlayerViewController.swift in Sources */,
 				91ECC6091C8A3072009761C2 /* SecondViewController.swift in Sources */,
 				91C148F01C8A3ED9006745B5 /* PingpongAPI.swift in Sources */,
 				91C148F21C8A48AC006745B5 /* User.swift in Sources */,
@@ -386,6 +611,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				91ECC6241C8A3072009761C2 /* PingpongScoreBoardUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F82F4B241CAF0FAD00D2B755 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F82F4B421CAF110F00D2B755 /* AddPlayerViewController.swift in Sources */,
+				F82F4B3F1CAF110700D2B755 /* User.swift in Sources */,
+				F82F4B3C1CAF10FD00D2B755 /* AppDelegate.swift in Sources */,
+				F82F4B411CAF110C00D2B755 /* PlayerTableViewController.swift in Sources */,
+				F82F4B3D1CAF110200D2B755 /* FirstViewController.swift in Sources */,
+				F82F4B401CAF110900D2B755 /* SecondViewController.swift in Sources */,
+				F82F4B3E1CAF110400D2B755 /* PingpongAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -499,7 +738,7 @@
 		};
 		91ECC6291C8A3072009761C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = DCECC89A2299E3328A09676F /* Pods-PingpongScoreBoard.debug.xcconfig */;
+			baseConfigurationReference = C43375E9238E2E2CCC5472C0 /* Pods-PingpongScoreBoard.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -517,7 +756,7 @@
 		};
 		91ECC62A1C8A3072009761C2 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4938C328A3635EDC7D796F75 /* Pods-PingpongScoreBoard.release.xcconfig */;
+			baseConfigurationReference = D869F52CC88A659E23017564 /* Pods-PingpongScoreBoard.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -535,6 +774,7 @@
 		};
 		91ECC62C1C8A3072009761C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C1E168A461E88B29B8088C98 /* Pods-PingpongScoreBoardTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PingpongScoreBoardTests/Info.plist;
@@ -547,6 +787,7 @@
 		};
 		91ECC62D1C8A3072009761C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0495356EA3CA5D49BB687F6E /* Pods-PingpongScoreBoardTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = PingpongScoreBoardTests/Info.plist;
@@ -559,6 +800,7 @@
 		};
 		91ECC62F1C8A3072009761C2 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC5481B27EE2773CBBFF742B /* Pods-PingpongScoreBoardUITests.debug.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PingpongScoreBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -571,6 +813,7 @@
 		};
 		91ECC6301C8A3072009761C2 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D406741B4E76F9DDDF37E619 /* Pods-PingpongScoreBoardUITests.release.xcconfig */;
 			buildSettings = {
 				INFOPLIST_FILE = PingpongScoreBoardUITests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -578,6 +821,40 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_TARGET_NAME = PingpongScoreBoard;
 				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		F82F4B371CAF0FAD00D2B755 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA22D7B90CC14EA662DC9FFC /* Pods-ScoreTracker.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ScoreTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.ScoreTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F82F4B381CAF0FAD00D2B755 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E403EF653B5C26872D805A6 /* Pods-ScoreTracker.release.xcconfig */;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = ScoreTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacMeDan.ScoreTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -616,6 +893,15 @@
 			buildConfigurations = (
 				91ECC62F1C8A3072009761C2 /* Debug */,
 				91ECC6301C8A3072009761C2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F82F4B391CAF0FAD00D2B755 /* Build configuration list for PBXNativeTarget "ScoreTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F82F4B371CAF0FAD00D2B755 /* Debug */,
+				F82F4B381CAF0FAD00D2B755 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

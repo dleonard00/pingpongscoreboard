@@ -1,0 +1,6 @@
+framework module Pods_PingpongScoreBoardTests {
+  umbrella header "Pods-PingpongScoreBoardTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

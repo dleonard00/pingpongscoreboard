@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
     @IBOutlet weak var player1Label: UILabel!
     @IBOutlet weak var player1ScoreLabel: UILabel!
     @IBOutlet weak var player2Label: UILabel!
@@ -24,30 +24,49 @@ class FirstViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
         resetGameParameters()
         setupGestureRecognizers()
         gameOver = true // wait for user to start game before enabling gestures
         self.gameButton.setTitle("Start Game", forState:.Normal)
+        createNewMatch()
+    }
+    
+    func createNewMatch(){
+        let match1Ref = ref.childByAppendingPath("match").childByAutoId()
+        
+        let game1Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+        let game2Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+        let game3Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+
+        match1Ref.childByAppendingPath("winner").setValue("-KC2lstQs46bLVmju6UJ")
+        
+        let game1 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+        let game2 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+        let game3 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+
+        game1Ref.setValue(game1)
+        game2Ref.setValue(game2)
+        game3Ref.setValue(game3)
+        
     }
     
     func setupGestureRecognizers() {
-        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedRight")
+        let swipeRightRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedRight))
         swipeRightRecognizer.direction = .Right
         self.view.addGestureRecognizer(swipeRightRecognizer)
-        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedLeft")
+        let swipeLeftRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedLeft))
         swipeLeftRecognizer.direction = .Left
         self.view.addGestureRecognizer(swipeLeftRecognizer)
-        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: "swipedDown")
+        let swipeDownRecognizer = UISwipeGestureRecognizer(target: self, action: #selector(swipedDown))
         swipeDownRecognizer.direction = .Down
         self.view.addGestureRecognizer(swipeDownRecognizer)
     }
-
+    
     func swipedRight(){
         print("swipedRight")
         if gameOver == true { return }
-
-        player2Score = player2Score < 21 ? player2Score + 1 : player2Score
+        
+        player2Score = player2Score + 1
         player2ScoreLabel.text = player2Score.description
         if player2Score > 10 {
             determineWinner()
@@ -58,8 +77,8 @@ class FirstViewController: UIViewController {
     func swipedLeft(){
         print("swipedLeft")
         if gameOver == true { return }
-
-        player1Score = player1Score < 21 ? player1Score + 1 : player1Score
+        
+        player1Score = player1Score + 1
         player1ScoreLabel.text = player1Score.description
         
         if player1Score > 10 {
@@ -85,15 +104,16 @@ class FirstViewController: UIViewController {
         if gameOver == true { return }
         player1Score = player1Score > 0 ? player1Score - 1 : player1Score
         player2Score = player2Score > 0 ? player2Score - 1 : player2Score
-
+        
         player1ScoreLabel.text = player1Score.description
         player2ScoreLabel.text = player2Score.description
         checkWhoServesNext()
     }
-
+    
     @IBAction func newGameButtonWasSelected(sender: AnyObject) {
         resetGameParameters()
         alertWhoServesFirst()
+        
         self.gameButton.setTitle("New Game", forState:.Normal)
     }
     
@@ -139,6 +159,13 @@ class FirstViewController: UIViewController {
         gameOver = false
         tento10 = false
     }
-
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        guard let navController = segue.destinationViewController as? UINavigationController, PTVC = navController.topViewController as? PlayerTableViewController else {
+            return
+        }
+        PTVC.firstVC = self
+    }
 }
 

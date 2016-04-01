@@ -1,9 +1,17 @@
-platform :tvos, '9.0'
+
 use_frameworks!
 
 target 'PingpongScoreBoard' do
-	pod 'Alamofire'
+    platform :tvos, '9.0'
+  pod 'Alamofire'
 end
+
+target 'ScoreTracker' do
+    platform :ios, '9.0'
+    pod 'Alamofire'
+    pod 'Firebase'
+end
+
 
 target 'PingpongScoreBoardTests' do
 
