@@ -9,7 +9,7 @@
 import UIKit
 
 class FirstViewController: UIViewController {
-
+    
     @IBOutlet weak var player1Label: UILabel!
     @IBOutlet weak var player1ScoreLabel: UILabel!
     @IBOutlet weak var player2Label: UILabel!
@@ -29,6 +29,25 @@ class FirstViewController: UIViewController {
         setupGestureRecognizers()
         gameOver = true // wait for user to start game before enabling gestures
         self.gameButton.setTitle("Start Game", forState:.Normal)
+        createNewMatch()
+    }
+    
+    func createNewMatch(){
+        let match1Ref = ref.childByAppendingPath("match").childByAutoId()
+        
+        let game1Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+        let game2Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+        let game3Ref = match1Ref.childByAppendingPath("games").childByAutoId()
+
+        
+        let game1 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+        let game2 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+        let game3 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
+
+        game1Ref.setValue(')
+        game2Ref.setValue(game2)
+        game3Ref.setValue(game3)
+        
     }
     
     func setupGestureRecognizers() {
@@ -42,11 +61,11 @@ class FirstViewController: UIViewController {
         swipeDownRecognizer.direction = .Down
         self.view.addGestureRecognizer(swipeDownRecognizer)
     }
-
+    
     func swipedRight(){
         print("swipedRight")
         if gameOver == true { return }
-
+        
         player2Score = player2Score + 1
         player2ScoreLabel.text = player2Score.description
         if player2Score > 10 {
@@ -58,7 +77,7 @@ class FirstViewController: UIViewController {
     func swipedLeft(){
         print("swipedLeft")
         if gameOver == true { return }
-
+        
         player1Score = player1Score + 1
         player1ScoreLabel.text = player1Score.description
         
@@ -85,15 +104,16 @@ class FirstViewController: UIViewController {
         if gameOver == true { return }
         player1Score = player1Score > 0 ? player1Score - 1 : player1Score
         player2Score = player2Score > 0 ? player2Score - 1 : player2Score
-
+        
         player1ScoreLabel.text = player1Score.description
         player2ScoreLabel.text = player2Score.description
         checkWhoServesNext()
     }
-
+    
     @IBAction func newGameButtonWasSelected(sender: AnyObject) {
         resetGameParameters()
         alertWhoServesFirst()
+        
         self.gameButton.setTitle("New Game", forState:.Normal)
     }
     
@@ -149,7 +169,7 @@ class FirstViewController: UIViewController {
         PTVC.firstVC = self
         
     }
-
-
+    
+    
 }
 
