@@ -54,6 +54,19 @@
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
+        <!--Interface Controller-->
+        <scene sceneID="iLR-Fp-GJn">
+            <objects>
+                <controller id="3ED-yg-FV3">
+                    <items>
+                        <label width="1" alignment="left" text="Pick who serves first?" textAlignment="center" numberOfLines="0" id="Fnh-Rt-x1g"/>
+                        <button width="1" alignment="left" title="Player 2" id="yn5-Wk-fmx"/>
+                        <button width="1" alignment="left" title="Player 1" id="5rA-Zt-F6k"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="463" y="342"/>
+        </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
             <objects>
