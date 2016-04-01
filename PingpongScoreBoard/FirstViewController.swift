@@ -44,7 +44,7 @@ class FirstViewController: UIViewController {
         let game2 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
         let game3 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
 
-        game1Ref.setValue(')
+        game1Ref.setValue(game1)
         game2Ref.setValue(game2)
         game3Ref.setValue(game3)
         
