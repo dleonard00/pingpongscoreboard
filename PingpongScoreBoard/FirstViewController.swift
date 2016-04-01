@@ -39,6 +39,7 @@ class FirstViewController: UIViewController {
         let game2Ref = match1Ref.childByAppendingPath("games").childByAutoId()
         let game3Ref = match1Ref.childByAppendingPath("games").childByAutoId()
 
+        match1Ref.childByAppendingPath("winner").setValue("-KC2lstQs46bLVmju6UJ")
         
         let game1 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
         let game2 = ["-KC2lstQs46bLVmju6UJ": 11, "-KC2lynG56HoFhYQQlEc": 10, "winner": "-KC2lstQs46bLVmju6UJ"]
