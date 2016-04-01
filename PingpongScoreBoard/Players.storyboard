@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.AppleTV.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="AppleTV" propertyAccessControl="none" useAutolayout="YES" initialViewController="i6t-YM-E88">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--Select Player 1-->
+        <scene sceneID="dVE-ly-WIs">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7ML-9u-a6c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="L9W-hK-gVr" customClass="PlayerTableViewController" customModule="PingpongScoreBoard" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="66" sectionHeaderHeight="40" sectionFooterHeight="40" id="sXB-vJ-cGq">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="ohb-tU-URd">
+                                <rect key="frame" x="0.0" y="199" width="1920" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ohb-tU-URd" id="5JC-mz-VcM">
+                                    <rect key="frame" x="0.0" y="0.0" width="1904" height="66"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="L9W-hK-gVr" id="Loi-Li-Hfn"/>
+                            <outlet property="delegate" destination="L9W-hK-gVr" id="Ixs-KV-Z6h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Select Player 1" id="EnD-2I-U47"/>
+                    <connections>
+                        <outlet property="navTitle" destination="EnD-2I-U47" id="q4P-rV-YHt"/>
+                        <segue destination="GgR-Ks-Bqr" kind="show" identifier="addPlayerSegue" id="05l-vh-UYE"/>
+                    </connections>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="3052" y="918"/>
+        </scene>
+        <!--AddPlayer-->
+        <scene sceneID="CPD-s1-zaM">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddPlayer" id="GgR-Ks-Bqr" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zbU-ZP-aKy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4401.5" y="854"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="oo7-uf-q3o">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="i6t-YM-E88" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ejk-Dm-5hA">
+                        <rect key="frame" x="0.0" y="0.0" width="1920" height="145"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="L9W-hK-gVr" kind="relationship" relationship="rootViewController" id="PX1-2W-mzO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="swU-cK-HCy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationItem title="Title" id="q0p-8v-JZT"/>
+            </objects>
+            <point key="canvasLocation" x="934" y="924"/>
+        </scene>
+    </scenes>
+</document>
